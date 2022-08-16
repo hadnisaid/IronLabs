@@ -1,0 +1,111 @@
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Ironhack/Ironlabs/.git/
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git add .
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git commit -m "lab"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git remote add origin https://github.com/hadnisaid/Ironlabs.git
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/hadnisaid/Ironlabs.git'
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git remote add origin https://github.com/hadnisaid/Ironlabs.git
+error: remote origin already exists.
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/hadnisaid/Ironlabs.git'
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/hadnisaid/Ironlabs.git'
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        module1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git add .
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git commit -m "lab1"
+[master (root-commit) 0efa8ca] lab1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 module1/lab1/test.txt
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 288 bytes | 288.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hadnisaid/Ironlabs.git
+ * [new branch]      master -> master
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git add .
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git commit -m "upd"
+[master 1b03c70] upd
+ 1 file changed, 1 insertion(+)
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Writing objects: 100% (5/5), 326 bytes | 326.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hadnisaid/Ironlabs.git
+   0efa8ca..1b03c70  master -> master
+
+Admin@DESKTOP-4797KBB MINGW64 ~/Ironhack/Ironlabs (master)
+$
